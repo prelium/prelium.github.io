@@ -1,297 +1,63 @@
-@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans';
+body{ margin:0 auto; width: 80%;}
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-body {
-  background: #F5F5F5;
-  color: #67727A;
-  font-family: 'Alegreya',sans-serif;
-  margin: 0;
-}
-h2 {
-  font-size: 250%;
-  font-weight: 700;
-  text-align: center;
-  padding-top: 2%;
-  color: #F5F5F5;
-}
-h3 {
-  font-size: 175%;
-  line-height: 155%;
-  padding: 5% 0;
-  font-weight: 400;
-  color: #F5F5F5;
+table {
+  background-color: #f1dac2;
+  width: 100%;
 }
 
-p {
-  color: #F5F5F5;
-  font-size: 160%;
-  line-height: 150%;
-  padding: 3%;
-  text-indent: 2%;
-  text-align: justify;
+.div1 {
+  width: 40%;
+  float: left;
+  background-color: #d2e9e6;
+  margin: 2% 2%;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 1px black;
+
+}
+.div2 {
+  float: left;
+  width: 40%;
+  margin: 2% 2%;
+  padding: 10px 10px;
+  background-color: #dfe3ee;
+  border-radius: 10px;
+  box-shadow: 0 0 1px black;
+}
+
+p{
+  float: left;
+  margin-left: 20%;
+}
+
+.div2:hover{
+  background-color: #8b9dc3;
+
+}
+
+.div1:hover{
+  background-color: #99cda9;
+}
+
+div:hover {
+  box-shadow: inset 0 0 3px #000000;
+}
+
+#myInput {
+  background-image: url('search-icon.png');
+  background-size: 20px auto;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 40%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
 img {
-  max-width: 100%;
+  width: 30%;
   height: auto;
-  width: auto;
-  margin-bottom: -4px;
-}
-
-header {
-  background-color: #6991AC;
-  width: 100%;
-  height: 86px;
-}
-
-#header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-#logo {
-  margin: 20px;
   float: left;
-  width: 200px;
-  height: 60px;
-  background: url(img/RD.png) no-repeat center;
-}
-
-/*--Start Navigation--*/
-nav {
-  float: right;
-  padding: 25px 20px 0px 0px;
-}
-
-#menu-icon {
-  display: hidden;
-  width: 40px;
-  height: 40px;
-  background: url(img/nav.png) center;
-}
-
-a:hover#menu-icon {
-  border-radius: 4px 4px 0 0;
-}
-
-ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  font-family: 'Alegreya',sans-serif;
-  font-size: 150%;
-  display: inline-block;
-  float: left;
-  padding: 10px;
-}
-
-nav ul li a {
-  color: #F5F5F5;
-  text-decoration: none;
-}
-
-nav ul li a:hover {
-  color: #C3D7DF;
-}
-
-.current {
-  color: #C3D7DF;
-}
-/*--End Navigation--*/
-
-.banner {
-  width: 100%;
-  background-color: #6991AC;
-}
-
-.banner-inner {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.one-fourth {
-  width: 25%;
-  float: left;
-  text-align: center;
-}
-
-#html {
-  background-color: #F1AA90;
-}
-
-#seo {
-  background-color: #AADCD2;
-}
-
-#social {
-  background-color: #a2b2c1;
-}
-
-#css {
-  background-color: #BEB9AD;
-}
-
-.one-fourth i {
-  color: #F0F0F0;
-  font-size: 500%;
-  padding: 13% 0 4% 0;
-}
-
-.outer-wrapper {
-  float: left;
-  width: 100%;
-  background-color: #C3D7DF;
-}
-.inner-wrapper {
-  float: left;
-  width: 100%;
-  background-color: #C3D7DF;
-}
-
-article {
-  float: left;
-  margin: 0 auto;
-  width: 50%;
-  height: auto;
-}
-
-aside {
-  width: 50%;
-  float: left;
-}
-
-#mobile2 , #desktop2 , #tablet2 {
-  background-color: #a2b2c1;
-}
-
-.inner-wrapper-3 {
-  float: left;
-  width: 100%;
-  background-color: #AADCD2;
-}
-.one-third {
-  width: 33.33333333%;
-  float: left;
-  text-align: center;
-}
-
-#google {
-  background-color: #F1AA90;
-}
-
-#marketing {
-   background-color: #BEB9AD;
-}
-
-/*--Start Footer--*/
-
-footer {
-  background-color: #6991AC;
-  width: 100%;
-}
-
-.social {
-  list-style-type: none;
-  text-align: center;
-}
-
-.social li{
-  display: inline;
-}
-
-.social i {
-  font-size: 460%;
-  margin: 1%;
-  padding: 5%;
-  color: #C3D7DF;
-}
-
-.social i:hover{
-  color: #F5F5F5;
-}
-
-/*--Media!--*/
-@media screen and (max-width: 768px) {
-  h2 {
-    font-size: 150%;
-  }
-
-  h3 {
-    font-size: 125%;
-  }
-  p {
-    font-size: 120%;
-  }
-  header {
-    position: absolute;
-  }
-  #logo {
-    margin: 15px 0 20px -25px;
-    background: url(img/RD_mobile) no-repeat center;
-  }
-
-  #menu-icon {
-    display: inline-block;
-  }
-  nav ul, nav:active ul {
-    display: none;
-    z-index: 1000;
-    position: absolute;
-    padding: 20px;
-    background: #6991AC;
-    right: 20px;
-    top: 60px;
-    border: 1px solid #FFF;
-    border-radius: 2px 0 2px 2px;
-    width: 50%;
-  }
-  nav:hover ul {
-    display: block;
-  }
-
-  nav li {
-    text-align: center;
-    width: 100%;
-    padding: 10px 0;
-  }
-
-  .banner {
-    padding-top: 86px;
-  }
-
-  .one-fourth {
-    float: left;
-    width: 100%;
-  }
-  .one-fourth i{
-    font-size: 350%;
-    padding: 4% 0 1% 0;
-  }
-  article {
-    width: 100%;
-  }
-  aside{
-    width: 100%;
-  }
-  #mobile2{
-    clear: both;
-  }
-  #mobile {
-    float: top;
-  }
-
-  .one-third {
-    width: 100%;
-  }
-
-  .social i{
-    font-size: 150%;
-    padding: 2%;
-  }
+  border-radius: 5%;
 }
